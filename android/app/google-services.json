@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "942391379973",
+    "project_id": "repair-services-28b12",
+    "storage_bucket": "repair-services-28b12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942391379973:android:7cf35e15cbd47dec4f346c",
+        "android_client_info": {
+          "package_name": "com.example.repair_services_komputer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942391379973-2n37v4ratfg168q749jkc2ru4a8httt4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.repair_services_komputer",
+            "certificate_hash": "b89cc2c9633490869465816531c264cec092c07f"
+          }
+        },
+        {
+          "client_id": "942391379973-m2s640bqe0lis3qu0dbtfu1u9sl7b8gk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzwVA___W-5UZszAhNoQAsmBboxPyC3eQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942391379973-m2s640bqe0lis3qu0dbtfu1u9sl7b8gk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
