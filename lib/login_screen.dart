@@ -2,7 +2,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:repair_services_komputer/register_screen.dart';
+import 'package:repair_services_komputer/home/home_screen.dart';
+import 'package:repair_services_komputer/register/register_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   LoginScreen({Key? key}) : super(key: key);
