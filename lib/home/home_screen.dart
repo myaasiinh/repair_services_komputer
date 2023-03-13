@@ -5,15 +5,29 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
+import 'package:repair_services_komputer/detail_screen.dart';
 
 class HomeScreen extends StatelessWidget {
 
   HomeScreen({Key? key}) : super(key: key);
 
   final User? user = FirebaseAuth.instance.currentUser;
-  var foto = [    
-      {'gambar': 'keyboard.jpeg', 'title': 'keyboard', 'subtitle': 'services'}, 
-           {'gambar': 'komputer.png', 'title': 'komputer', 'subtitle': 'services'},
+ var foto = [    
+      {
+      'gambar': 'keyboard.jpeg', 
+      'title': 'keyboard', 
+      'subtitle': 'services',
+      // 'onTap': () {
+      //   Navigator.push(context, MaterialPageRoute(builder: (_) => DetailScreen()),
+      //   );
+      // }
+    }, 
+
+      {'gambar': 'komputer.png', 
+      'title': 'komputer',
+       'subtitle': 'services',
+       'onTap': () {}
+      },
            
   ];
 
@@ -139,6 +153,11 @@ class HomeScreen extends StatelessWidget {
                     padding: const EdgeInsets.only(right: 20),
                     child: Column(
                       children: [
+                        // GestureDetector(
+                        //   onTap: () {
+                        //     foto[index]['onTap'];
+                        //   },
+                        // ),
                         Container(
                           height: 200,
                         width: 150,
@@ -158,8 +177,8 @@ class HomeScreen extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 10,),
-                        Text(foto[index]['title']!, style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),),
-                        Text(foto[index]['subtitle']!, style: TextStyle(fontSize: 15, color: Colors.grey),),
+                        Text(foto[index]['title'].toString(), style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),),
+                        Text(foto[index]['subtitle'].toString(), style: TextStyle(fontSize: 15, color: Colors.grey),),
                       ],
                     ),
                   );
@@ -225,4 +244,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-
